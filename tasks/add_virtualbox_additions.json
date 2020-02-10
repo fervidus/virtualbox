@@ -1,0 +1,12 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A short description of this task",
+  "input_method": "environment",
+  "parameters": {
+    "vbox_version": {
+      "type": "String",
+      "description": "The version of VirtualBox to use"
+    }
+  }
+}
