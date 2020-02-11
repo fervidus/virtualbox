@@ -1,30 +1,56 @@
 {
   "name": "fervid-virtualbox",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Bryan Belanger",
-  "summary": "",
+  "summary": "Installs VirtualBox.",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/fervidus/virtualbox.git",
+  "project_page": "https://github.com/fervidus/virtualbox",
+  "issues_url": "https://github.com/fervidus/virtualbox/issues",
   "dependencies": [
-
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.25.0 < 7.0.0"
+    },
+    {
+      "name": "puppetlabs/yumrepo_core",
+      "version_requirement": ">= 1.0.0 < 2.0.0"
+    }
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7"
+        "6",
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
-        "7"
+        "6",
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
+        "6",
+        "7",
         "8"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
       ]
     },
     {
@@ -36,13 +62,28 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "9"
+        "8",
+        "9",
+        "10"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "18.04"
+        "14.04",
+        "14.10",
+        "15.04",
+        "16.04",
+        "18.04",
+        "18.10",
+        "19.04"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "11",
+        "12"
       ]
     }
   ],
